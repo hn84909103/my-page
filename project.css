@@ -18,6 +18,15 @@ body{
   margin: 100px 120px 10px 120px;
 }
 
+.con-pic{
+  width: 50%;
+  height: auto;
+}
+
+.con-pic .pic-l{
+  float: left;
+}
+
 .pr-title{
   /*background-color: yellow;*/
   /*padding-bottom: 30px;*/
@@ -25,6 +34,22 @@ body{
 
 .pr-content{
   padding: 30px;
+}
+
+.video-container{
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .back{
