@@ -84,15 +84,15 @@ body{
 
 .prof{
   padding: 20px;
-  font-size: 23px;
+  font-size: 18px;
   font-weight: 700;
-  text-align: justify;
+  text-align: left;
 }
 
 .sk{
   padding: 20px;
   font-size: 18px;
-  text-align: justify;
+  text-align: left;
 }
 
 .back{

@@ -16,16 +16,15 @@ body {
   font-family: 'Permanent Marker', cursive;
   padding-top: 50px;
 }
-
-.in-t h2{
+/*.in-t h2{
   font-size: clamp(4rem, 2.5vw, 10rem);
-}
+}*/
 
 .enter{
   text-align: center;
   font-size: 18px;
   font-weight: 600;
-  padding-top: 40px;
+  padding-top: /*40px*/5%;
 }
 
 .enter a:link{
@@ -115,6 +114,7 @@ code {
 }
 
 .bton{
+  border: none;
   border-bottom:2.5px solid black;
   border-radius: 0;
   outline: none;
@@ -124,11 +124,19 @@ code {
 }
 
 .bton:hover{
+  border: none;
   /*background-color: #ddd;*/
   border-bottom:2.5px solid #ddd;
 }
 
+.bton:active{
+  border: none;
+  outline: none;
+}
+
+/*shows it be selected*/
 .bton.active{
+  border: none;
   font-weight: bold;
   border-bottom:3px solid orange;
   outline: none;
