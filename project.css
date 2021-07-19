@@ -37,7 +37,10 @@ body{
   background: #555;
 }
 
-
+.navbar-brand p{
+  font-size: 35px;
+  font-family: 'Permanent Marker', cursive;
+}
 
 
 .container-xxl{
@@ -77,6 +80,19 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.prof{
+  padding: 20px;
+  font-size: 23px;
+  font-weight: 700;
+  text-align: justify;
+}
+
+.sk{
+  padding: 20px;
+  font-size: 18px;
+  text-align: justify;
 }
 
 .back{

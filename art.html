@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="project.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -19,10 +22,10 @@
         <div class="d-flex flex-grow-1">
             <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
             <a class="navbar-brand d-none d-lg-inline-block" href="index.html">
-                Allison Yang
+                <p>Allison Yang</p>
             </a>
             <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
-                <img src="//placehold.it/40?text=LOGO" alt="logo">
+                <img src="img/logo.png" alt="logo">
             </a>
             <div class="w-100 text-right">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
@@ -36,7 +39,7 @@
                     <a href="index.html" class="nav-link m-2 menu-item">Work</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link m-2 menu-item active">Art</a>
+                    <a href="art.html" class="nav-link m-2 menu-item active">Art</a>
                 </li>
                 <li class="nav-item">
                     <a href="profile.html" class="nav-link m-2 menu-item">Profile</a>
@@ -48,24 +51,63 @@
         </div>
     </nav>
 
-    <div class="container-xxl min">
-      <div class="row work-th">
-        <div class="col-6 pj1">
-          <a href="#">
-          <img src="img/testimg.JPG" class="img-fluid" alt="">
-          <div class="overlay">
-            <div class="text">Project1</div>
+    <div class="row work-th" style="padding: 20px;">
+
+      <!-- 1 -->
+      <div class="col-sm-6 col-lg-4 pr">
+        <a href="art1.html">
+        <img src="img/cover-r-01.jpg" class="img-fluid" alt="">
+        <div class="overlay">
+          <div class="text">
+            <h4>Crossing The Desert</h4>
+            <p>Digital Art / Photoshop</p>
           </div>
-        </a>
         </div>
-        <div class="col-6 pj2">
-          <img src="img/testimg.JPG" class="img-fluid" alt="">
-          <div class="overlay">
-            <div class="text">Project2</div>
+        </a>
+      </div>
+
+      <!-- 2 -->
+      <div class="col-sm-6 col-lg-4 pr">
+        <a href="art2.html">
+        <img src="img/cover-r-02.jpg" class="img-fluid" alt="">
+        <div class="overlay">
+          <div class="text">
+            <h4>TOXIC ANIMAL FRIENDS</h4>
+            <p>Digital Art / Photoshop / Illustrator</p>
           </div>
+        </div>
+        </a>
+      </div>
+
+
+    <!-- 3 -->
+    <div class="col-sm-6 col-lg-4 pr">
+      <a href="art3.html">
+      <img src="img/cover-r-03.jpg" class="img-fluid" alt="">
+      <div class="overlay">
+        <div class="text">
+          <h4>3D Perspective Swing</h4>
+          <p>JavaScript WebGL</p>
         </div>
       </div>
+      </a>
     </div>
+
+
+    <!-- 4 -->
+    <div class="col-sm-6 col-lg-4 pr">
+      <a href="art4.html">
+      <img src="img/cover-r-04.jpg" class="img-fluid" alt="">
+      <div class="overlay">
+        <div class="text">
+          <h4>TRNDSTTR - Musicc Video</h4>
+          <p>Video Editing / After Effect</p>
+        </div>
+      </div>
+      </a>
+    </div>
+
+</div>
 
     <div class="back">
       <a class="btn btn-light" href="#top">Back to Top</a>

@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+/*scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav-active{
+  color: black;
+  font-weight: bold;
+}
+
+.navbar-brand p{
+  font-size: 35px;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.menu-item{
+  font-size: 18px;
+}
+
+.container-xxl{
+  /*background-color: green;*/
+  padding-left: 10px;
+  /*height:540px;*/
+}
+
+.row .main-th{
+}
+
+.main-banner{
+  /*background-color: yellow;*/
+}
+
+.row .work-th{
+  /*width: 100%;*/
+}
+
+.work-th{
+  overflow: hidden;
+}
+
+.box{
+  display: none;
+}
+
+.bton{
+  border-bottom:2.5px solid black;
+  border-radius: 0;
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+  font-size: clamp(0.7rem, 1.5vw, 1rem);
+}
+
+.bton:hover{
+  /*background-color: #ddd;*/
+  border-bottom:2.5px solid #ddd;
+}
+
+.bton.active{
+  font-weight: bold;
+  border-bottom:3px solid orange;
+  outline: none;
+}
+
+h1{
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
+
+.pr{
+  /*background-color: pink;*/
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 4%;
+  bottom: 0;
+  left: 3%;
+  right: 0;
+  height: 94%;
+  width: 94%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(59, 59, 59, 0.8);
+}
+
+.pr:hover .overlay {
+  opacity: 1;
+}
+
+.show{
+  display: block;
+}
+
+.text{
+  color: white;
+  font-size: clamp(1rem, 2.5vw, 1.2rem) ;
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  /*-webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
+  text-align: left;
+}
+
+.text h4{
+  font-size: clamp(1.3rem, 2.5vw, 1.5rem);
+}
+
+
+.back{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.footer{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: small;
+  text-align: center;
+}
