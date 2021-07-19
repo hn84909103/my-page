@@ -11,6 +11,32 @@ body {
     animation-fill-mode: forwards;
 }
 
+.in-t{
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  padding-top: 50px;
+}
+
+.in-t h2{
+  font-size: clamp(4rem, 2.5vw, 10rem);
+}
+
+.enter{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 40px;
+}
+
+.enter a:link{
+  color: black;
+}
+
+.enter a:visited {
+  color: black;
+}
+
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
