@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Allison Yang</title>
+  </head>
+  <body>
+
+    <a name="top"></a>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="d-flex flex-grow-1">
+            <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+            <a class="navbar-brand d-none d-lg-inline-block" href="intro.html">
+                <p>Allison Yang</p>
+            </a>
+            <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <div class="w-100 text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link m-2 menu-item active">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a href="art.html" class="nav-link m-2 menu-item">Art</a>
+                </li>
+                <li class="nav-item">
+                    <a href="profile.html" class="nav-link m-2 menu-item">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link m-2 menu-item">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Banner -->
+    <div class="container-fluid min">
+
+<br>
+      <div class="row" id="buttons">
+        <button class="btn bton" type="button" onclick="filterObjects('all')">SHOW ALL WORKS</button>
+        <button class="btn bton" type="button" onclick="filterObjects('graph')">GRAPHIC DESIGN</button>
+        <button class="btn bton" type="button" onclick="filterObjects('web')">WEB/APP DESIGN</button>
+        <button class="btn bton" type="button" onclick="filterObjects('vid')">VIDEO/ANIMATION</button>
+      </div>
+<br>
+      <div class="row work-th">
+
+        <!-- 1 -->
+        <div class="col-sm-6 col-lg-4 pr box graph">
+          <a href="project13.html">
+          <img src="img/cover13.jpg" class="img-fluid" alt="">
+          <div class="overlay">
+            <div class="text">
+              <h4>Summer Promo Design</h4>
+              <p>Graphic Design/Illustrator</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <!-- 2 -->
+        <div class="col-sm-6 col-lg-4 pr box web">
+          <a href="project11.html">
+          <img src="img/cover11.jpg" class="img-fluid" alt="">
+          <div class="overlay">
+            <div class="text">
+              <h4>Hamster Run</h4>
+              <p>Game Design/Unity</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+
+        <!-- 3 -->
+        <div class="col-sm-6 col-lg-4 pr box graph">
+          <a href="project6.html">
+          <img src="img/cover06.jpg" class="img-fluid" alt="">
+          <div class="overlay">
+            <div class="text">
+              <h4>User Manual Design</h4>
+              <p>InDesign/Illustrator</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+
+        <!-- 4 -->
+        <div class="col-sm-6 col-lg-4 pr box web">
+          <a href="project10.html">
+          <img src="img/cover10.jpg" class="img-fluid" alt="">
+          <div class="overlay">
+            <div class="text">
+              <h4>Weather Application</h4>
+              <p>Web Design/React JS</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+
+        <!-- 5 -->
+        <div class="col-sm-6 col-lg-4 pr box graph">
+          <a href="project5.html">
+          <img src="img/cover05.jpg" class="img-fluid" alt="">
+          <div class="overlay">
+            <div class="text">
+              <h4>Landing Page Design</h4>
+              <p>Illustrator/Photoshop</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <!-- 6 -->
+        <div class="col-sm-6 col-lg-4 pr box graph">
+          <a href="project9.html">
+          <img src="img/cover09.jpg" class="img-fluid" alt="">
+          <div class="overlay">
+            <div class="text">
+              <h4>AY Studio Stationary</h4>
+              <p>Graphic Design/Illustrator</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+
+        <!-- 7 -->
+        <div class="col-sm-6 col-lg-4 pr box web">
+          <a href="project8.html">
+          <img src="img/cover08.jpg" class="img-fluid" alt="">
+          <div class="overlay">
+            <div class="text">
+              <h4>Rock paper scissors Game</h4>
+              <p>Web Design/HTML/CSS/JavaScript</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <!-- 8 -->
+        <div class="col-sm-6 col-lg-4 pr box web">
+          <a href="project7.html">
+          <img src="img/cover07.jpg" class="img-fluid" alt="">
+          <div class="overlay">
+            <div class="text">
+              <h4>Kiosk Interface Design</h4>
+            </div>
+          </div>
+          </a>
+        </div>
+
+
+        <!-- 9 -->
+        <div class="col-sm-6 col-lg-4 pr box graph">
+          <a href="project4.html">
+          <img src="img/cover04.jpg" class="img-fluid" alt="">
+          <div class="overlay">
+            <div class="text">
+              <h4>Branding - AFC Industries</h4>
+              <p>InDesign/Photoshop/Illustrator</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+
+        <!-- 10 -->
+        <div class="col-sm-6 col-lg-4 pr box vid">
+          <a href="project1.html">
+          <img src="./img/cover01.jpg" class="img-fluid" alt="">
+          <div class="overlay">
+            <div class="text">
+              <h4>Semiotics of the Bathroom</h4>
+              <p>Video Production/Art Director/Videographer</p>
+            </div>
+          </div>
+        </a>
+        </div>
+
+
+        <!-- 11 -->
+        <div class="col-sm-6 col-lg-4 pr box vid">
+          <a href="project2.html">
+          <img src="./img/cover02.jpg" class="img-fluid" alt="">
+          <div class="overlay">
+            <div class="text">
+              <h4>Neon Sign of Rooster Year</h4>
+              <p>3D Animation/After Effects</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+
+        <!-- 12 -->
+        <div class="col-sm-6 col-lg-4 pr box vid">
+          <a href="project3.html">
+          <img src="./img/cover03.jpg" class="img-fluid" alt="">
+          <div class="overlay">
+            <div class="text">
+              <h4>Great Sup Paddle Boards</h4>
+              <p>3D Model/Texture</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+
+        <!-- 13 -->
+        <div class="col-sm-6 col-lg-4 pr box vid">
+          <a href="project14.html">
+          <img src="img/cover14.jpg" class="img-fluid" alt="">
+          <div class="overlay">
+            <div class="text">
+              <h4>Mag On Product Video</h4>
+              <p>3D Animation/Modeling/Editing</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <!-- 14 -->
+        <div class="col-sm-6 col-lg-4 pr box vid">
+          <a href="project12.html">
+          <img src="img/cover12.jpg" class="img-fluid" alt="">
+          <div class="overlay">
+            <div class="text">
+              <h4>Multiverse</h4>
+              <p>Video Production/3D Animation/Editing</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+
+      </div>
+
+      <div class="back">
+        <a class="btn btn-light" href="#top">Back to Top</a>
+      </div>
+
+      <div class="footer">
+        AY CREATIONS ©2021
+      </div>
+
+    <div id="root"></div>
+
+<script src="action.js" type="text/javascript"></script>
+  </body>
+</html>
