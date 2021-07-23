@@ -15,6 +15,42 @@ body {
   text-align: center;
   font-family: 'Permanent Marker', cursive;
   padding-top: 50px;
+
+  animation: fadeIn linear 3s;
+  -webkit-animation: fadeIn linear 3s;
+  -moz-animation: fadeIn linear 3s;
+  -o-animation: fadeIn linear 3s;
+  -ms-animation: fadeIn linear 3s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  25% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  25% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  25% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  25% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  15% {opacity:0;}
+  100% {opacity:1;}
 }
 /*.in-t h2{
   font-size: clamp(4rem, 2.5vw, 10rem);
@@ -25,14 +61,28 @@ body {
   font-size: 18px;
   font-weight: 600;
   padding-top: /*40px*/5%;
+  color: black;
+
+  animation: fadeIn linear 3s;
+  -webkit-animation: fadeIn linear 3s;
+  -moz-animation: fadeIn linear 3s;
+  -o-animation: fadeIn linear 3s;
+  -ms-animation: fadeIn linear 3s;
 }
 
 .enter a:link{
   color: black;
+  text-decoration: none;
 }
 
 .enter a:visited {
   color: black;
+}
+
+.enter a:hover{
+  color: white;
+  font-weight: 400;
+  background-color: black;
 }
 
 
@@ -94,23 +144,17 @@ code {
   /*height:540px;*/
 }
 
-.row .main-th{
-}
-
-.main-banner{
-  /*background-color: yellow;*/
-}
-
-.row .work-th{
-  /*width: 100%;*/
-}
-
 .work-th{
   overflow: hidden;
+  margin: 0 15px;
 }
 
 .box{
   display: none;
+}
+
+#buttons{
+  margin: 0 15px;
 }
 
 .bton{
@@ -149,18 +193,30 @@ h1{
 
 .pr{
   /*background-color: pink;*/
-  padding-top: 15px;
-  padding-bottom: 10px;
+  /*padding-top: 15px;*/
+  /*padding-bottom: 10px;*/
+  padding: 0;
+
+  animation: fadeIn linear 2s;
+  -webkit-animation: fadeIn linear 2s;
+  -moz-animation: fadeIn linear 2s;
+  -o-animation: fadeIn linear 2s;
+  -ms-animation: fadeIn linear 2s;
+}
+
+.img-fluid{
+  max-width: 100%;
+  height: auto;
 }
 
 .overlay {
   position: absolute;
-  top: 4%;
+  top: 0; /*4*/
   bottom: 0;
-  left: 3%;
+  left: 0; /*3*/
   right: 0;
-  height: 94%;
-  width: 94%;
+  /*height: auto; /*94*/
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
   background-color: rgba(59, 59, 59, 0.8);
