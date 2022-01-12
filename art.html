@@ -23,7 +23,7 @@
         <div class="d-flex flex-grow-1">
             <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
             <a class="navbar-brand d-none d-lg-inline-block" href="index.html">
-                <p>Allison Yang</p>
+                <p style="padding-left:20px;">Allison Yang</p>
             </a>
             <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="index.html">
                 <img src="img/logo.png" alt="logo">
@@ -36,9 +36,15 @@
         </div>
         <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
             <ul class="navbar-nav ml-auto flex-nowrap">
-                <li class="nav-item">
-                    <a href="work.html" class="nav-link m-2 menu-item">Work</a>
-                </li>
+              <li class="nav-item dropdown">
+                  <a href="work.html" class="nav-link m-2 menu-item">Work</a>
+                  <div class="dropdown-content" id="buttons" style="visibility: hidden;">
+                    <a class="bton" type="button" onclick="filterObjects('all')">ALL WORKS</a>
+                    <a class="bton" type="button" onclick="filterObjects('graph')">GRAPHIC DESIGN</a>
+                    <a class="bton" type="button" onclick="filterObjects('web')">WEB/APP DESIGN</a>
+                    <a class="bton" type="button" onclick="filterObjects('vid')">VIDEO/ANIMATION</a>
+                  </div>
+              </li>
                 <li class="nav-item">
                     <a href="art.html" class="nav-link m-2 menu-item active">Art</a>
                 </li>
@@ -53,68 +59,71 @@
     </nav>
     <div class="container-xxl min">
       <div class="pr-title">
-        <h3 style="padding-left:20px; padding-top:20px">Art</h3>
+        <h2 style="padding-left:40px; padding-top:20px; font-weight: bold;">Art <span style="color:#ffbb00; font-weight: 900; font-size:1.875rem;">></span></h2>
       </div>
-    </div>
+      <div class="row work-th" style="padding: 20px;">
+
+        <!-- 1 -->
+        <div class="col-sm-6 col-lg-4 pr">
+          <a href="art1.html">
+          <img src="img/cover-r-01.jpg" class="img-fluid" alt="">
+          <div class="overlay">
+            <div class="text">
+              <h4>Crossing The Desert</h4>
+              <p>Digital Art / Photoshop</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <!-- 2 -->
+        <div class="col-sm-6 col-lg-4 pr">
+          <a href="art2.html">
+          <img src="img/cover-r-02.jpg" class="img-fluid" alt="">
+          <div class="overlay">
+            <div class="text">
+              <h4>TOXIC ANIMAL FRIENDS</h4>
+              <p>Digital Art / Photoshop / Illustrator</p>
+            </div>
+          </div>
+          </a>
+        </div>
 
 
-    <div class="row work-th" style="padding: 20px;">
-
-      <!-- 1 -->
+      <!-- 3 -->
       <div class="col-sm-6 col-lg-4 pr">
-        <a href="art1.html">
-        <img src="img/cover-r-01.jpg" class="img-fluid" alt="">
+        <a href="art3.html">
+        <img src="img/cover-r-03.jpg" class="img-fluid" alt="">
         <div class="overlay">
           <div class="text">
-            <h4>Crossing The Desert</h4>
-            <p>Digital Art / Photoshop</p>
+            <h4>3D Perspective Swing</h4>
+            <p>JavaScript WebGL</p>
           </div>
         </div>
         </a>
       </div>
 
-      <!-- 2 -->
+
+      <!-- 4 -->
       <div class="col-sm-6 col-lg-4 pr">
-        <a href="art2.html">
-        <img src="img/cover-r-02.jpg" class="img-fluid" alt="">
+        <a href="art4.html">
+        <img src="img/cover-r-04.jpg" class="img-fluid" alt="">
         <div class="overlay">
           <div class="text">
-            <h4>TOXIC ANIMAL FRIENDS</h4>
-            <p>Digital Art / Photoshop / Illustrator</p>
+            <h4>TRNDSTTR - Music Video</h4>
+            <p>Video Editing / After Effect</p>
           </div>
         </div>
         </a>
       </div>
 
-
-    <!-- 3 -->
-    <div class="col-sm-6 col-lg-4 pr">
-      <a href="art3.html">
-      <img src="img/cover-r-03.jpg" class="img-fluid" alt="">
-      <div class="overlay">
-        <div class="text">
-          <h4>3D Perspective Swing</h4>
-          <p>JavaScript WebGL</p>
-        </div>
       </div>
-      </a>
+
+
     </div>
 
 
-    <!-- 4 -->
-    <div class="col-sm-6 col-lg-4 pr">
-      <a href="art4.html">
-      <img src="img/cover-r-04.jpg" class="img-fluid" alt="">
-      <div class="overlay">
-        <div class="text">
-          <h4>TRNDSTTR - Music Video</h4>
-          <p>Video Editing / After Effect</p>
-        </div>
-      </div>
-      </a>
-    </div>
 
-</div>
 
     <div class="back">
       <a class="btn btn-light" href="#top">Back to Top</a>

@@ -23,10 +23,10 @@
         <div class="d-flex flex-grow-1">
             <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
             <a class="navbar-brand d-none d-lg-inline-block" href="index.html">
-                <p>Allison Yang</p>
+                <p style="padding-left:20px;">Allison Yang</p>
             </a>
             <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="index.html">
-                <img src="img/logo.png" alt="logo">
+                <img src="img/logo.png" alt="logo" style="padding-bottom:10px;">
             </a>
             <div class="w-100 text-right">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
@@ -35,9 +35,15 @@
             </div>
         </div>
         <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
-            <ul class="navbar-nav ml-auto flex-nowrap">
-                <li class="nav-item">
+            <ul class="navbar-nav ml-auto flex-nowrap">  <!---->
+                <li class="nav-item dropdown">
                     <a href="work.html" class="nav-link m-2 menu-item active">Work</a>
+                    <div class="dropdown-content" id="buttons">
+                      <a class="bton" type="button" onclick="filterObjects('all')">ALL WORKS</a>
+                      <a class="bton" type="button" onclick="filterObjects('graph')">GRAPHIC DESIGN</a>
+                      <a class="bton" type="button" onclick="filterObjects('web')">WEB/APP DESIGN</a>
+                      <a class="bton" type="button" onclick="filterObjects('vid')">VIDEO/ANIMATION</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a href="art.html" class="nav-link m-2 menu-item">Art</a>
@@ -54,7 +60,10 @@
 
     <!-- Main Banner -->
     <div class="container-fluid min">
-
+      <div class="pr-title">
+        <h2 style="padding:20px 0 20px 20px; font-weight: bold;">Work <span style="color:#ffbb00; font-weight: 900; font-size:1.875rem;">></span></h2>
+      </div>
+<!--
 <br>
       <div class="row" id="buttons">
         <button class="bton" type="button" onclick="filterObjects('all')">SHOW ALL WORKS</button>
@@ -62,7 +71,7 @@
         <button class="bton" type="button" onclick="filterObjects('web')">WEB/APP DESIGN</button>
         <button class="bton" type="button" onclick="filterObjects('vid')">VIDEO/ANIMATION</button>
       </div>
-<br>
+<br>-->
       <div class="row work-th">
 
         <!-- 1 -->
@@ -259,6 +268,7 @@
 
       </div>
 
+
       <div class="back">
         <a class="btn btn-light" href="#top">Back to Top</a>
       </div>
@@ -266,7 +276,7 @@
       <div class="footer">
         AY CREATIONS ©2021
       </div>
-
+    </div>
     <div id="root"></div>
 
 <script src="action.js" type="text/javascript"></script>

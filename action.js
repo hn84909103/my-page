@@ -1,4 +1,5 @@
-filterObjects("all")
+filterObjects("all") //default
+
 function filterObjects(c){
   var x, i;
   x = document.getElementsByClassName("box");
