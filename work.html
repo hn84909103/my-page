@@ -38,12 +38,6 @@
             <ul class="navbar-nav ml-auto flex-nowrap">  <!---->
                 <li class="nav-item dropdown">
                     <a href="work.html" class="nav-link m-2 menu-item active">Work</a>
-                    <div class="dropdown-content" id="buttons">
-                      <a class="bton" type="button" onclick="filterObjects('all')">ALL WORKS</a>
-                      <a class="bton" type="button" onclick="filterObjects('graph')">GRAPHIC DESIGN</a>
-                      <a class="bton" type="button" onclick="filterObjects('web')">WEB/APP DESIGN</a>
-                      <a class="bton" type="button" onclick="filterObjects('vid')">VIDEO/ANIMATION</a>
-                    </div>
                 </li>
                 <li class="nav-item">
                     <a href="art.html" class="nav-link m-2 menu-item">Art</a>
@@ -61,7 +55,13 @@
     <!-- Main Banner -->
     <div class="container-fluid min">
       <div class="pr-title">
-        <h2 style="padding:20px 0 20px 20px; font-weight: bold;">Work <span style="color:#ffbb00; font-weight: 900; font-size:1.875rem;">></span></h2>
+        <h2 style="padding:20px 0 5px 20px; font-weight: bold;">Work <span style="color:#ffbb00; font-weight: 900; font-size:1.875rem;">></span></h2>
+      </div>
+      <div class="sel" id="buttons">
+        <a class="bton" type="button" onclick="filterObjects('all')">SHOW ALL WORKS</a>
+        <a class="bton" type="button" onclick="filterObjects('graph')">GRAPHIC DESIGN</a>
+        <a class="bton" type="button" onclick="filterObjects('web')">WEB/APP DESIGN</a>
+        <a class="bton" type="button" onclick="filterObjects('vid')">VIDEO/ANIMATION</a>
       </div>
 <!--
 <br>
@@ -274,7 +274,7 @@
       </div>
 
       <div class="footer">
-        AY CREATIONS ©2021
+        AY CREATIONS ©2022
       </div>
     </div>
     <div id="root"></div>
