@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="project.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -23,10 +23,10 @@
         <div class="d-flex flex-grow-1">
             <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
             <a class="navbar-brand d-none d-lg-inline-block" href="index.html">
-                <p>Allison Yang</p>
+                <p style="padding-left:20px;">Allison Yang</p>
             </a>
             <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="index.html">
-                <img src="img/logo.png" alt="logo">
+                <img src="img/logo.png" alt="logo" style="padding-bottom:10px;">
             </a>
             <div class="w-100 text-right">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
@@ -36,9 +36,9 @@
         </div>
         <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
             <ul class="navbar-nav ml-auto flex-nowrap">
-                <li class="nav-item">
-                    <a href="work.html" class="nav-link m-2 menu-item active">Work</a>
-                </li>
+              <li class="nav-item dropdown">
+                  <a href="work.html" class="nav-link m-2 menu-item  active">Work</a>
+              </li>
                 <li class="nav-item">
                     <a href="art.html" class="nav-link m-2 menu-item">Art</a>
                 </li>
@@ -54,12 +54,15 @@
 
 
     <div class="container-xxl min">
+      <div class="back-bton">
+        <a href="work.html"><span><</span> back</a>
+      </div>
       <div class="pr-title">
         <h3>Semiotics of the Bathroom</h3>
         <p>An Artwork inspired by Martha Rosler: "Semiotics of the Kitchen" (1975)</p>
       </div>
 
-      <div>
+      <div class="row">
         <img src="img/pic-01.jpg" class="img-fluid" alt="">
       </div>
 
@@ -89,7 +92,7 @@
           </p>
       </div>
 
-      <div>
+      <div class="row">
         <img src="img/pic-02.jpg" class="img-fluid" alt="">
       </div>
 
@@ -100,7 +103,6 @@
       <div class="footer">
         AY CREATIONS ©2021
       </div>
-
     </div>
 
   </body>
