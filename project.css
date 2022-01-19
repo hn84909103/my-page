@@ -177,6 +177,10 @@ h2{
   padding-left: 10px;
 }
 
+.col-sm p{
+  margin:20px 0;
+}
+
 .prof{
   padding: 20px;
   font-size: 18px;
